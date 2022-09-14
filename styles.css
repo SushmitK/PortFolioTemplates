@@ -307,6 +307,11 @@ main a{
     .demo{
         margin: 5px 0;
     }
+    header{
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
 }
 @media (max-width: 400px){
     .info p{
