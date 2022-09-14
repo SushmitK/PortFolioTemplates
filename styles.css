@@ -1,0 +1,345 @@
+html {
+    scroll-behavior: smooth;
+  }
+/* Colors & Fonts*/
+:root{
+    --primaryColor: #1A1A1A;
+    --secondaryColor: #262626;
+    --thirdColor: #4D4D4D;
+    --f1Color: #FFFFF0;
+    --f2Color: #787891;
+    --Oswald: 'Oswald', sans-serif;
+    --poiret: 'Poiret One';
+    --quicksand: 'Quicksand', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--primaryColor);
+}
+
+
+
+/* Logo */
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+h1{
+    color: var(--f1Color);
+    font-family: var(--poiret);
+    font-size: 2.5rem;
+    margin: 10px 0 5px 0;
+}
+header a{
+    color: var(--f2Color);
+    font-family: var(--quicksand);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+/* Logo */
+
+/* Helpers */
+
+/* seprator */
+.seprator{
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    height: 1px;
+    width: 100%;
+}
+/* seprator */
+
+
+/* WrapUp */
+
+
+
+/* WrapUp */
+
+
+/* Helpers */
+
+
+/* Info */
+.info{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.info img{
+    max-width: 20%;
+    max-height: 20%;
+    margin: 0 auto;
+}
+.info p{
+    text-align: center;
+    color: var(--f1Color);
+    font-family: var(--Oswald);
+    font-size: 1.1rem;
+    margin: 10px auto 20px auto;
+    width: 40%;
+}
+.webgl{
+    height: 300px;
+    width: 300px;
+    background-color: var(--thirdColor);
+    margin: 10px 0;
+}
+/* Info */
+
+/* Features */
+.features{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+.features h2{
+    color: var(--f1Color);
+    font-family: var(--quicksand);
+    font-size: 2rem;
+    margin: 5px 0;
+}
+.features div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+.features div figure{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+.features div figure img{
+    width: 170px;
+    flex-basis: 80%;
+    margin: 10px;
+    max-width: 80%;
+    max-height: 80%;
+    padding: 5px;
+    border: 1px solid var(--thirdColor);
+    border-radius: 100px;
+}
+.features div figure figcaption{
+    color: var(--f1Color);
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: var(--poiret);
+}
+.features strong{
+    font-size: 1.7rem;
+}
+
+
+/* Features */
+
+
+
+/* main */
+
+main{
+    width: 60%;
+    margin: 10px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    background: url(images/1.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-radius: 15px;
+}
+main>div{
+    height: 350px;
+    border-radius: 25%;
+    margin-right: 10%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+main div h3{
+    font-family: var(--Oswald);
+    color: var(--f1Color);
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+}
+main div p{
+    font-family: var(--quicksand);
+    color: var(--f1Color);
+    font-size: 0.8rem;
+    margin: 20px 0 0 20px;
+}
+.name{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 5px;
+}
+.links{
+    margin: 20px 0;
+}
+main a{
+    text-decoration: none;
+    font-family: var(--poiret);
+    color: var(--f1Color);
+    font-size: 1.5rem; 
+    margin: 0 5px; 
+}
+.demo{
+    padding: 10px 15px;
+    border: 2px solid var(--secondaryColor);
+    border-radius: 5px;
+    background-color: #ffffff1a;
+    color: var(--f1Color);
+}
+.download{
+    padding: 10px 20px;
+    border: 2px solid var(--secondaryColor);
+    border-radius: 5px;
+    background-color: black;
+}
+
+.demo:hover{
+    background-color: black;
+    
+}
+.download:hover{
+   
+    background-color: var(--thirdColor);
+}
+
+/* main */
+
+
+
+/* media quary */
+@media (max-width: 1300px){
+    .info p{
+        width: 50%;
+    }
+    .features div figure img{
+        width: 140px;
+    }
+    .features div figure figcaption{
+        font-size: 1.3rem;
+    }
+    .features strong{
+        font-size: 1.5rem;
+    }
+   
+}
+@media (max-width: 1000px){
+    .info p{
+        width: 60%;
+    }
+    .features div figure img{
+        width: 100px;
+    }
+    .features div figure figcaption{
+        font-size: 1rem;
+    }
+    .features strong{
+        font-size: 1.2rem;
+    }
+    main div h3{
+        font-size: 2.1rem;
+    }
+    main div p{
+        font-size: 0.5rem;
+    }
+    main a{
+        font-size: 1rem;
+    }
+
+}
+@media (max-width: 700px){
+    .info p{
+        width: 70%;
+    }
+    .features div figure img{
+        width: 80px;
+    }
+    .features div figure figcaption{
+        font-size: 0.9rem;
+    }
+    .features strong{
+        font-size: 1.1rem;
+    }
+    main{
+        justify-content: center;
+        align-items: flex-end;
+    }
+    main>div {
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 0;
+    }
+    .name{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .links{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        margin-top: 0;
+        text-align: center;
+    }
+    .name p{
+        display: none;
+    }
+    .demo{
+        margin: 5px 0;
+    }
+}
+@media (max-width: 400px){
+    .info p{
+        width: 80%;
+    }
+    .features div figure img{
+        width: 60px;
+    }
+    .features div figure figcaption{
+        font-size: 0.8rem;
+    }
+    .features strong{
+        font-size: 1rem;
+    }
+}
+
+
+/* Footer */
+footer{
+    width: 100%;
+    margin-top: 10px;
+}
+footer p{
+    text-align: center;
+    width: 80%;
+    color: var(--f1Color);
+    font-family: var(--poiret);
+    margin: 0 auto;
+}
+footer a{
+    text-decoration: dotted;
+    color: var(--f2Color);
+}
+.cread{
+    font-size: 1.2rem;
+}
